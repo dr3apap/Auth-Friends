@@ -33,10 +33,11 @@ const LoginForm = props => {
 
   return (
     <div className={styles.formContainer}>
-      <h1 className={styles.title}>Friend's Login</h1>
       <form onSubmit={userLogin}>
+        <h1 className={styles.title}>Friend's Login</h1>
         <label htmlFor='User'>
           <input
+            className={styles.input}
             onChange={handleChange}
             id='User'
             name='username'
@@ -49,6 +50,7 @@ const LoginForm = props => {
 
         <label>
           <input
+            className={styles.input}
             onChange={handleChange}
             id='Password'
             type='Password'
@@ -58,7 +60,11 @@ const LoginForm = props => {
             value={user.password}
           />
         </label>
-        <button type='submit'>Submit</button>
+        <button
+          className={`${styles.btnPrimary} ${styles.primary}`}
+          type='submit'>
+          Submit
+        </button>
       </form>
     </div>
   );

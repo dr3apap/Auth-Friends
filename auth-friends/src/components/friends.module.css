@@ -43,7 +43,9 @@ html {
  text-decoration: none;
  font-size: 1.4rem;
  color: orange;
- margin-right: 1rem;
+ margin-right: 0.7rem;
+ padding: 0.5rem;
+
 }
 
 .listParent {
@@ -59,13 +61,45 @@ html {
  display: flex;
  justify-content: center;
  align-items: center;
- width: 90%;
- margin-top: 10px;
+ width: 100%;
+
 
 }
 
 .title {
-
+ height: 100%;
  color: rgb(0, 0, 40);
+ margin-bottom: 2rem;
+ margin-left: 3rem;
+ width: 100%;
+}
 
+.input {
+ padding: 0.25rem;
+ width: 10rem;
+ border: 0.1rem solid grey;
+ font-size: 1rem;
+}
+
+
+
+.btnPrimary {
+ background: rgb(0, 0, 40);
+ font-size: 1rem;
+ color: whitesmoke;
+ border-radius: 0.4rem;
+ padding: 0.4rem 1rem;
+ margin-left: 0.3rem;
+
+
+
+}
+
+.primary:hover {
+ width: 10rem;
+ color: rgb(0, 0, 40);
+ background: coral;
+ border-radius: 0.5rem grey;
+
+ font-size: 1.5rem
 }
